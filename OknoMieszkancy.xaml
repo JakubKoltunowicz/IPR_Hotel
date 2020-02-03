@@ -1,0 +1,35 @@
+﻿<Window x:Class="Hotel.OknoMieszkancy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Height="600" Width="800">
+    <Grid>
+        <Button x:Name="Okno_glowne" Content="Okno główne" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Okno_glowne_Click"/>
+        <Button x:Name="Ustawienia_mieszkancow" Content="Ustawienia mieszkańcow" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="150" Height="25"/>
+        <Button x:Name="Parking" Content="Parking" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Parking_Click"/>
+        <Button x:Name="Interkorm" Content="Interkorm" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Interkorm_Click"/>
+        <ComboBox x:Name="Lista_mieszkancow" Text="Lista mieszkancow" Loaded="ComboBox_Loaded" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="Lista_mieszkancow_SelectionChanged"/>
+        <Button x:Name="Zapisz_zmiany" Content="Zapisz zmiany" HorizontalAlignment="Left" Margin="230,510,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="Zapisz_zmiany_Click"/>
+        <Button x:Name="Odrzuc_zmiany" Content="Odrzuć zmiany" HorizontalAlignment="Left" Margin="420,510,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="Odrzuc_zmiany_Click"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="148" Margin="610,130,0,0" VerticalAlignment="Top" Width="150" />
+        <Button x:Name="Edytuj_zdjecie" Content="Edytuj zdjęcie" HorizontalAlignment="Left" Margin="610,90,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="Edytuj_zdjecie_Click"/>
+
+        <TextBox x:Name="Pozostale_informacje" IsReadOnly="True" MouseDoubleClick="Pozostale_informacje_MouseDoubleClick" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="360" Margin="40,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570">
+            <TextBox.Text>
+                <Binding Path="MyText" ElementName="MyWindow" UpdateSourceTrigger="PropertyChanged"/>
+            </TextBox.Text>
+        </TextBox>
+
+        <TextBox x:Name="Imie_Nazwisko" IsReadOnly="True" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="40" Margin="40,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" >
+            <TextBox.Text>
+                <Binding Path="MyText" ElementName="MyWindow" UpdateSourceTrigger="PropertyChanged"/>
+            </TextBox.Text>
+        </TextBox>
+    </Grid>
+</Window>

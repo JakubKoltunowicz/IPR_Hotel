@@ -1,0 +1,24 @@
+﻿<Window x:Class="Hotel.OknoGlowne"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Height="600" Width="800">
+    <Grid>
+        <Button x:Name="Okno_glowne" Content="Okno główne" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="150" Height="25"/>
+        <Button x:Name="Ustawienia_mieszkancow" Content="Ustawienia mieszkańcow" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="150" Click="Ustawienia_mieszkancow_Click" Height="25"/>
+        <Button x:Name="Parking" Content="Parking" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Parking_Click"/>
+        <Button x:Name="Interkorm" Content="Interkorm" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Interkorm_Click"/>
+        <Button x:Name="Otworz_bramke_parkingowa" Content="Otworz bramkę&#xD;&#xA;   parkingową" HorizontalAlignment="Left" Margin="101,488,0,0" VerticalAlignment="Top" Width="150" Height="50" FontSize="15" Click="Otworz_bramke_parkingowa_Click"/>
+        <Button x:Name="Otworz_drzwi_wind" Content="Otwórz drzwi &#xD;&#xA;    do wind" HorizontalAlignment="Left" Margin="325,488,0,0" VerticalAlignment="Top" Width="150" Height="50" FontSize="15" Click="Otworz_drzwi_wind_Click"/>
+        <Button x:Name="Otworz_drzwi_wejsciowe" Content="Otwórz drzwi &#xD;&#xA;   wejściowe" HorizontalAlignment="Left" Margin="550,488,0,0" VerticalAlignment="Top" Width="150" Height="50" FontSize="15" Click="Otworz_drzwi_wejsciowe_Click"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="170" Margin="610,60,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="Imie_nazwisko" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Margin="40,60,0,0" VerticalAlignment="Top" Width="570" Height="40" />
+        <Label x:Name="Pozostale_informacje" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Margin="40,100,0,0" VerticalAlignment="Top" Height="380" Width="570"/>
+    </Grid>
+</Window>

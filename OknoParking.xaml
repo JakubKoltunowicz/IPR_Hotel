@@ -1,0 +1,18 @@
+﻿<Window x:Class="Hotel.OknoParking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Height="600" Width="800">
+    <Grid>
+        <Button x:Name="Okno_glowne" Content="Okno główne" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Okno_glowne_Click"/>
+        <Button x:Name="Ustawienia_mieszkancow" Content="Ustawienia mieszkańcow" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="150" Click="Ustawienia_mieszkancow_Click" Height="25"/>
+        <Button x:Name="Parking" Content="Parking" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="150" Height="25"/>
+        <Button x:Name="Interkorm" Content="Interkorm" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Interkorm_Click"/>
+    </Grid>
+</Window>

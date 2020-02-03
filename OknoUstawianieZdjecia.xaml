@@ -1,0 +1,18 @@
+﻿<Window x:Class="Hotel.OknoUstawianieZdjecia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Height="600" Width="800">
+    <Grid>
+        <TextBox x:Name="Sciezka_zdjecia" HorizontalAlignment="Left" Height="169" Margin="200,188,0,0" TextWrapping="Wrap" Text="Podaj ścieżkę do zdjęcia" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="Ustaw_zdjecie" Content="Ustaw zdjęcie" HorizontalAlignment="Left" Margin="200,450,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Ustaw_zdjecie_Click"/>
+        <Button x:Name="Powrot" Content="Powrót" HorizontalAlignment="Left" Margin="634,10,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Powrot_Click"/>
+        <Button x:Name="Usun_zdjecie" Content="Usuń zdjęcie" HorizontalAlignment="Left" Margin="450,450,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Usun_zdjecie_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Hotel.OknoInterkom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Height="600" Width="800">
+    <Grid>
+        <Button x:Name="Okno_glowne" Content="Okno główne" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Okno_glowne_Click"/>
+        <Button x:Name="Ustawienia_mieszkancow" Content="Ustawienia mieszkańcow" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="150" Click="Ustawienia_mieszkancow_Click" Height="25"/>
+        <Button x:Name="Parking" Content="Parking" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Parking_Click"/>
+        <Button x:Name="Interkorm" Content="Interkorm" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="150" Height="25" />
+        <ComboBox x:Name="Lista_mieszkancow" Loaded="ComboBox_Loaded" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top" Width="720" Height="25" SelectionChanged="Lista_mieszkancow_SelectionChanged"/>
+        <Label x:Name="Imie_Nazwisko" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Margin="40,100,0,0" VerticalAlignment="Top" Width="720" Height="35"/>
+        <TextBox x:Name="Wiadomosc" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="340" Margin="40,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="720"/>
+        <Button x:Name="Wyslij_wiadomosc" Content="Wyślij wiadomość" HorizontalAlignment="Left" Margin="230,505,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="Wyslij_wiadomosc_Click"/>
+        <Button x:Name="Zadzwon_do_mieszkania" Content="Zadzwoń do mieszkania" HorizontalAlignment="Left" Margin="420,505,0,0" VerticalAlignment="Top" Width="150" Height="40" Click="Zadzwon_do_mieszkania_Click"/>
+    </Grid>
+</Window>
