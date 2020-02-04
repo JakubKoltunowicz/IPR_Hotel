@@ -13,15 +13,20 @@ namespace Hotel
 
         struct Rezerwacja
         {
-            DateTime poczatekRezerwacji;
-            DateTime koniecRezerwacji;
-            string rezerwujacy;
-            int miejsce;
+            private DateTime poczatekRezerwacji;
+            private DateTime koniecRezerwacji;
+            private string rezerwujacy;
+            private int miejsce;
 
             public void Operation()
             {
 
             }
+        }
+
+        public void wczytaj_miejsce_parkingowe()
+        {
+
         }
 
         public void DodajRezerwacje()

@@ -25,7 +25,7 @@ namespace Hotel
         {   
             InitializeComponent();
             Random rnd = new Random();
-            string path1, path2, path;
+            string path1, path2, path; 
             int liczba_mieszkancow, liczba;
             ZarzadMieszkancami zarzad_mieszkancami = new ZarzadMieszkancami();
 

@@ -79,6 +79,53 @@ namespace Hotel
             DBCommand.DoCommand(query);
             dbCon.Close();
         }
+        
+        public static void Dodawanie_rezerwacji(string poczatek, string koniec, int ID_miejsca, string rezerwujacy)
+        {
+            string query = "INSERT INTO rezerwacje (`ID_miejsca`, `Poczatek`, `Koniec`, `Rezerwujacy`) VALUES ('" + ID_miejsca + "', '" + poczatek + "', '" + koniec + "', '" + rezerwujacy + "')";
+            DBCommand.DoCommand(query);
+            dbCon.Close();
+        }
+
+        public static int ID_miejsca()
+        {
+            string query = "SELECT COUNT(ID_miejsca) FROM miejsca_parkingowe";
+            int a = DBCommand.DoCommand(query).GetInt32(0);
+            dbCon.Close();
+            return a;
+        }
+
+        public static int ID_rezerwacji()
+        {
+            string query = "SELECT COUNT(ID_rezerwacji) FROM rezerwacje";
+            int a = DBCommand.DoCommand(query).GetInt32(0);
+            dbCon.Close();
+            return a;
+        }
+
+        public static int ID_miejsca_parkingowego(int ID_rezerwacji)
+        {
+            string query = "SELECT `ID_miejsca` FROM rezerwacje WHERE ID_rezerwacji = '" + ID_rezerwacji + "'";
+            int a = DBCommand.DoCommand(query).GetInt32(0);
+            dbCon.Close();
+            return a;
+        }
+
+        public static string Poczatek(int ID_rezerwacji)
+        {
+            string query = "SELECT `Poczatek` FROM rezerwacje WHERE ID_rezerwacji = '" + ID_rezerwacji + "'";
+            string a = DBCommand.DoCommand(query).GetString(0);
+            dbCon.Close();
+            return a;
+        }
+
+        public static string Koniec(int ID_rezerwacji)
+        {
+            string query = "SELECT `Koniec` FROM rezerwacje WHERE ID_rezerwacji = '" + ID_rezerwacji + "'";
+            string a = DBCommand.DoCommand(query).GetString(0);
+            dbCon.Close();
+            return a;
+        }
 
         private static MySqlDataReader DoCommand(string query)
         {
@@ -88,5 +135,7 @@ namespace Hotel
             reader.Read();
             return reader;
         }
+
+        
     }
 }

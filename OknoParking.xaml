@@ -14,5 +14,14 @@
         <Button x:Name="Ustawienia_mieszkancow" Content="Ustawienia mieszkańcow" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Width="150" Click="Ustawienia_mieszkancow_Click" Height="25"/>
         <Button x:Name="Parking" Content="Parking" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="150" Height="25"/>
         <Button x:Name="Interkorm" Content="Interkorm" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Interkorm_Click"/>
+        <Button x:Name="Wolne" Content="Wyświetl wolne miejsca" HorizontalAlignment="Left" Margin="420,88,0,0" VerticalAlignment="Top" Width="150" Click="Wolne_Click"/>
+        <Button x:Name="Dodawanie_rezerwacji" Content="Dodaj rezerwacje" HorizontalAlignment="Left" Margin="230,500,0,0" VerticalAlignment="Top" Width="165" Height="30" Click="Dodawanie_rezerwacji_Click"/>
+        <TextBox x:Name="textBox_poczatek" HorizontalAlignment="Left" Height="23" Margin="175,62,0,0" TextWrapping="Wrap" Text="Podaj datę w formacie YYYY-MM-DD" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="textBox_koniec" HorizontalAlignment="Left" Height="23" Margin="175,112,0,0" TextWrapping="Wrap" Text="Podaj datę w formacie YYYY-MM-DD" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="label" Content="Początek rezerwacji:" HorizontalAlignment="Left" Margin="40,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Koniec Rezerwacji:" HorizontalAlignment="Left" Margin="40,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.899,-2.448"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="300" Margin="40,163,0,0" VerticalAlignment="Top" Width="720" SelectionChanged="Lista_miejsc_SelectionChanged"/>
+        <TextBox x:Name="Rezerwujacy" HorizontalAlignment="Left" Height="30" Margin="40,500,0,0" TextWrapping="Wrap" Text="Wpisz nazwę rezerwującego" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.507,-0.017"/>
+        <Button x:Name="Nowe" Content="Podaj kolejne daty" HorizontalAlignment="Left" Margin="610,88,0,0" VerticalAlignment="Top" Width="150" Click="Nowe_Click"/>
     </Grid>
 </Window>
