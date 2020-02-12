@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Hotel\obj\Debug\
+C:\IPR_Hotel-master\obj\Debug\
 Hotel
 none
 false
 DEBUG;TRACE
-C:\Hotel\App.xaml
+C:\IPR_Hotel-master\App.xaml
 6499293383
 
-171913035735
-29905542067
+18-1697795834
+29-185861440
 OknoGlowne.xaml;OknoInterkom.xaml;OknoMapa.xaml;OknoMieszkancy.xaml;OknoParking.xaml;OknoUstawianieZdjecia.xaml;
 
-False
+True
 
